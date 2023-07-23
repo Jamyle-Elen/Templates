@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;list-style: none;scroll-behavior: smooth;scroll-padding-top: 2rem;font-family: Poppins;
+}
+
+:root {
+    --main-color: #ff2c1f;
+    --hover-btn: #fa1216;
+    --text-color: #020307;
+    --bg-color: #fff;
+
+}
+
+body {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    /*background: var(--main-color);*/
+    transition: 0.5s;
+}
+
+.logo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.img {
+    font-size: 24px;
+    color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+    column-gap: 5rem;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--bg-color);
+}
+
+/*Barrinha hover*/
+.navbar a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background: var(--main-color);
+    bottom: -4px;
+    left: 0;
+    transition: 0.2s all linear;
+}
+
+.navbar a:hover::after, .navbar .inicio-active::after {
+    width: 100%;
+}
+
+#menu-icon {
+    size: 24px;
+    display: none;
+    cursor: pointer;
+    z-index: 300;
+}
+/* Ctrl + : COMENTA 23/07/2023 09:33 */
+
+.btn {
+    padding: 0.6rem 1.5rem;
+    color: var(--bg-color);
+    background: var(--main-color);
+    border-radius: 0.5rem;
+}
+
+.btn:hover {
+    background: var(--hover-btn);
+}
