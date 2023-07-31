@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;list-style: 0;scroll-behavior: smooth;font-family: Poppins;
+}
+
+:root {
+    --main-color: #000;
+    --bg-color: #575656;
+    --text-color: #fff;
+    --text1-color: #af9b9b;
+}
+
+header {
+    font-family: 'Concert One', cursive;
+    text-transform: uppercase;
+}
+
+.header-01 {
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: .2rem 8rem;
+}
+
+.header-0 {
+    background: var(--main-color);
+    color: var(--text-color);
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.header-0 a {
+    color: var(--text-color);
+    font-size: 0.7rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.header-0 i {
+    margin-right: .6rem;
+}
+
+/* Header 1 */
+
+.header-1 a {
+    color: var(--text-color);
+    font-size: 0.7rem;
+    text-align: center;
+}
